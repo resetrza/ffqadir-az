@@ -1,0 +1,41 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "M\u0259hsul ad\u0131"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "pubg",
+        "tiktok",
+        "fan"
+      ],
+      "title": "Kateqoriya"
+    },
+    "price": {
+      "type": "number",
+      "title": "Qiym\u0259t (AZN)"
+    },
+    "image": {
+      "type": "string",
+      "title": "\u015e\u0259kil URL"
+    },
+    "description": {
+      "type": "string",
+      "title": "T\u0259svir"
+    },
+    "active": {
+      "type": "boolean",
+      "title": "Aktiv",
+      "default": true
+    }
+  },
+  "required": [
+    "name",
+    "category",
+    "price"
+  ]
+}

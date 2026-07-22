@@ -1,0 +1,56 @@
+{
+  "name": "Order",
+  "type": "object",
+  "properties": {
+    "product": {
+      "type": "string",
+      "title": "M\u0259hsul"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "pubg",
+        "tiktok",
+        "fan"
+      ],
+      "title": "Kateqoriya"
+    },
+    "price": {
+      "type": "number",
+      "title": "Qiym\u0259t (AZN)"
+    },
+    "quantity": {
+      "type": "number",
+      "title": "\u018fd\u0259d",
+      "default": 1
+    },
+    "customer_name": {
+      "type": "string",
+      "title": "M\u00fc\u015ft\u0259ri ad\u0131"
+    },
+    "contact": {
+      "type": "string",
+      "title": "\u018flaq\u0259 (WhatsApp/Telegram)"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "yeni",
+        "tamamland\u0131",
+        "l\u0259\u011fv"
+      ],
+      "default": "yeni",
+      "title": "Status"
+    },
+    "note": {
+      "type": "string",
+      "title": "Qeyd"
+    }
+  },
+  "required": [
+    "product",
+    "category",
+    "price",
+    "contact"
+  ]
+}
